@@ -1,1 +1,16 @@
+CREATE DATABASE IF EXIST ejercicio1;
+DROP DATABASE ejercicio1;
+USE ejercicio1;
 
+CREATE TABLE Producto (
+    nombre CHAR(10),
+    pais VARCHAR(50),
+    cantidad INT,
+    precio FLOAT,
+    peso_gramos DECIMAL(5, 2),
+    fecha_creacion DATE,
+    fecha_caducidad DATETIME,
+    fecha_entrega TIME
+);
+
+INSERT INTO ejercicio1 VALUES ('Yogurt', 'España', 123, 50.45, 2123.45, '2023-10-27', '2023-10-27 14:30:00', '18:30:00');
